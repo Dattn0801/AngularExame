@@ -8,22 +8,22 @@ import { of } from 'rxjs';
 export class LaptopService {
   private LaptopData: Laptop[] = [
     {
-      id: 'MB001',
-      name: 'IPhone 12 ProMax',
-      price: 1200,
-      description: 'Iphone 12 ProMax 256g max option',
+      id: 'CR001',
+      name: 'Toyota 2020',
+      price: 2500,
+      description: 'Toyotaaaaa Carrrr',
     },
     {
-      id: 'MB002',
-      name: 'SamSung S21',
+      id: 'CR002',
+      name: 'Yamaha 2020',
       price: 2000,
-      description: 'SamSung 256g max option',
+      description: 'Yamaha Carrr',
     },
     {
-      id: 'MB003',
-      name: 'Redmi Note 10S',
+      id: 'CR003',
+      name: 'Honda 2020',
       price: 3000,
-      description: 'Redmi Note 256g max option',
+      description: 'Honda Carr',
     },
   ];
   constructor() {}

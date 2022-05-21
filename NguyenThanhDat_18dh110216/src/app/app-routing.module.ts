@@ -8,11 +8,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/mobiles',
+    redirectTo: '/cars',
     pathMatch: 'full',
   },
   {
-    path: 'mobiles',
+    path: 'cars',
     component: LaptopsComponent,
     children: [
       {

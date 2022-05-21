@@ -25,11 +25,11 @@ export class LaptopDetailsComponent implements OnInit {
   }
 
   onEdit() {
-    this.router.navigateByUrl('/mobiles/edit/' + this.index);
+    this.router.navigateByUrl('/cars/edit/' + this.index);
   }
 
   onDelete() {
     this.laptopService.deleteLaptop(this.index);
-    this.router.navigateByUrl('/mobiles');
+    this.router.navigateByUrl('/cars');
   }
 }
