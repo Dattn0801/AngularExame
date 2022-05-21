@@ -6,30 +6,30 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-laptop-details',
   templateUrl: './laptop-details.component.html',
-  styleUrls: ['./laptop-details.component.css']
+  styleUrls: ['./laptop-details.component.css'],
 })
 export class LaptopDetailsComponent implements OnInit {
   laptop: Laptop;
-  index: number
+  index: number;
   constructor(
     private laptopService: LaptopService,
     private route: ActivatedRoute,
     private router: Router
-  ) { }
+  ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
+    this.route.params.subscribe((params) => {
       this.index = +params['id'];
       this.laptop = this.laptopService.getLaptop(this.index);
-    })
+    });
   }
 
   onEdit() {
-    this.router.navigateByUrl('/laptops/edit/' + this.index)
+    this.router.navigateByUrl('/mobiles/edit/' + this.index);
   }
 
   onDelete() {
     this.laptopService.deleteLaptop(this.index);
-    this.router.navigateByUrl('/laptops')
+    this.router.navigateByUrl('/mobiles');
   }
 }
